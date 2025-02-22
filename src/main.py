@@ -7,7 +7,7 @@ from ocr import extract_text_from_image
 from pdf_processing import extract_text_from_pdf
 from text_processing import refine_ocr_results
 
-OCR_ATTEMPTS = 10  
+OCR_ATTEMPTS = 10
 SAVE_FOLDER = "training_test"
 
 def process_files(folder):
