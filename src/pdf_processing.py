@@ -8,6 +8,6 @@ def extract_text_from_pdf(pdf_path):
     
     for page in pages:
         text = pytesseract.image_to_string(page, lang="fra")
-        full_text += text + "\n\n"
+        full_text += text.strip() + "\n\n"
     
     return full_text

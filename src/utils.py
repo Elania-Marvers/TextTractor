@@ -10,3 +10,8 @@ def list_files(directory, extensions=None):
         else:
             files.append(os.path.join(directory, file))
     return files
+
+def ensure_directory_exists(directory):
+    """Crée un dossier s'il n'existe pas"""
+    if not os.path.exists(directory):
+        os.makedirs(directory)
